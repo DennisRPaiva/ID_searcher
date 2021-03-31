@@ -1,0 +1,25 @@
+GET http://localhost:3000/clientes
+
+###
+GET http://localhost:3000/clientes/15
+
+###
+POST http://localhost:3000/clientes
+
+{
+    "nome": "Pessoa Qualquer",
+    "id": 12345,
+    "pago": "Pago"
+}
+
+###
+DELETE  http://localhost:3000/clientes/15
+
+###
+
+PATCH  http://localhost:3000/clientes/15
+Content-Type: application/json
+
+{
+    "nome": "Novo nome"
+}
